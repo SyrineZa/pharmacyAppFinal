@@ -1,0 +1,16 @@
+<p>ajouter-laboratoire works!</p><div class="container">
+    <h1> Ajouter une laboratoire</h1>
+    <form (ngSubmit)="ajouterLaboratoire(Labo)">
+    <div class = "form-group">
+    </div>
+    
+    <pre></pre>
+    <div class = "form-group">
+    <label for="nomf">Nom Laboratoire</label> <br>
+    <input  [(ngModel)]="Labo.Lib_labo"required type="text" name ="nomf" class="form-control">
+    </div>
+    <pre></pre>
+    <button class="btn" type="submit">Ajouter</button>
+    <button (click)="onAnnulerClick()" type="submit" class="btn btn-secondary">Annuler</button>
+    </form>
+    </div>

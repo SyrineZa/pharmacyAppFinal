@@ -1,0 +1,46 @@
+<div class="container">
+    <h1> Consulter fiche produit</h1>
+    <form (ngSubmit)="consulterFicheProduit(Id_prd)">
+    <div class = "form-group">
+    </div>
+    <pre></pre>
+    <div class = "form-group">
+    <label for="Id"> Id produit </label> <br>
+    <input required type="number" [(ngModel)]="Id_prd" name ="Id" class="form-control" id="id" >
+    <pre></pre>
+    <button type="submit" class="btn btn-primary">Confirmer</button>
+    <button (click)="onAnnulerClick()" type="button" class="btn btn-secondary">Annuler</button>
+    </div>
+    <!--
+    <form  [formGroup]="Produitform" (ngSubmit)="submit()">
+
+        <div class="form-group">
+          <label for="libelle">Libelle</label>
+          <input formControlName="Lib_prd" type="text" id="lib"   class="form-control">
+      
+        </div>
+        <div class="form-group">
+          <label for="des">Description</label>
+          <input formControlName="Description_prd" type="text" class="form-control" id="des" >
+        </div>
+        <div class="form-group">
+            <label for="des">Prix produit</label>
+            <input formControlName="Prix_prd" type="text" class="form-control" id="des" >
+          </div>
+        <div class="form-group">
+          <label for="pr">Prix livraison</label>
+          <input formControlName="Prix_Livr" type="number" class="form-control" id="des" >
+        </div>
+        <div class="form-group">
+          <label for="prix">Date d'ajout</label>
+          <input formControlName="DateAjout_prd" type="date" class="form-control" id="des" >
+        </div>
+      
+      
+      
+      <button > ajouter </button>
+      </form>
+  
+    -->
+    </form>
+  </div>

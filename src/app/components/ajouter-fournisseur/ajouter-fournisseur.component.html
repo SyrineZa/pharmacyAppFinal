@@ -1,0 +1,30 @@
+<div class="container">
+    <h1> Ajouter un fournisseur</h1>
+    <form (ngSubmit)="ajouterFournisseur(f)">
+    <div class = "form-group">
+    </div>
+    <pre></pre>
+    <div class = "form-group">
+    <label for="nomf">Nom fournisseur</label> <br>
+    <input  [(ngModel)]="f.Nom_fournisseur"required type="text" name ="nomf" class="form-control">
+    </div>
+    <pre></pre>
+    <div class = "form-group">
+    <label for="ad"> Adresse </label> <br>
+    <input [(ngModel)]="f.Adresse_fournisseur"required type="text" name ="ad" class="form-control">
+    </div>
+    <pre></pre>
+    <div class = "form-group">
+    <label for="email"> Email </label> <br>
+    <input [(ngModel)]="f.Email_fournisseur" required type="text" name ="email" class="form-control">
+    </div>
+    <pre></pre>
+    <div class = "form-group">
+    <label for="tel"> Telephone </label> <br>
+    <input [(ngModel)]="f.Tel_fournisseur" required type="number" name ="date" class="form-control">
+    </div>
+    <pre></pre>
+    <button class="btn" type="submit">Add</button>
+    <button (click)="onAnnulerClick()" type="submit" class="btn btn-secondary">Annuler</button>
+    </form>
+    </div>

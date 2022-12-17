@@ -1,0 +1,19 @@
+<div class="container">
+    <h1> Modifier une laboratoire</h1>
+    <form (ngSubmit)="modiferFamille(fam,id)">
+    <div class = "form-group">
+    </div>
+    <div class = "form-group">
+    <label for="id">Id</label> <br>
+    <input  [(ngModel)]="id"required type="number" name ="id" class="form-control">
+    </div>
+    <pre></pre>
+    <div class = "form-group">
+    <label for="nomf">Libelle Famille</label> <br>
+    <input  [(ngModel)]="fam.Lib_Famille"required type="text" name ="nomf" class="form-control">
+    </div>
+    <pre></pre>
+    <button class="btn" type="submit">Modifier</button>
+    <button (click)="onAnnulerClick()" type="submit" class="btn btn-secondary">Annuler</button>
+    </form>
+    </div>

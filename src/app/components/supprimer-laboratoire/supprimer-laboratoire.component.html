@@ -1,0 +1,14 @@
+<div class="container">
+    <h1> Supprimer une laboratoire</h1>
+    <form (ngSubmit)="supprimerLaboratoire(Id)">
+    <div class = "form-group">
+    </div>
+    <div class = "form-group">
+    <label for="id">Id</label> <br>
+    <input  [(ngModel)]="Id"required type="number" name ="id" class="form-control">
+    </div>
+    <pre></pre>
+    <button class="btn" type="submit">Supprimer</button>
+    <button (click)="onAnnulerClick()" type="submit" class="btn btn-secondary">Annuler</button>
+    </form>
+    </div>

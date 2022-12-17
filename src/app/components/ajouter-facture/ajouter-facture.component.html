@@ -1,0 +1,29 @@
+<div class="container">
+    <h1> Ajouter une facture</h1>
+    <form (ngSubmit)="ajouterFacture(fac)">
+    <div class = "form-group">
+    </div>
+    <div class = "form-group">
+    <label for="nomf">Date</label> <br>
+    <input  [(ngModel)]="fac.Date"required type="date" name ="date" class="form-control">
+    </div>
+    <pre></pre>
+    <div class = "form-group">
+    <label for="TH">Total_HT</label> <br>
+    <input  [(ngModel)]="fac.Total_HT"required type="number" name ="TH" class="form-control">
+    </div>
+    <pre></pre>
+    <div class = "form-group">
+    <label for="TT">Total_TVA</label> <br>
+    <input  [(ngModel)]="fac.Total_TVA"required type="number" name ="TT" class="form-control">
+    </div>
+    <pre></pre>
+    <div class = "form-group">
+    <label for="TTC">Total_TTC</label> <br>
+    <input  [(ngModel)]="fac.Total_TTC"required type="number" name ="TTC" class="form-control">
+    </div>
+    <pre></pre>
+    <button class="btn" type="submit">Ajouter</button>
+    <button (click)="onAnnulerClick()" type="submit" class="btn btn-secondary">Annuler</button>
+    </form>
+    </div>
